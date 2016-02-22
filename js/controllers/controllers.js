@@ -26,7 +26,7 @@ controllers.controller('CalculatorCtrl', ['$scope', 'CalculadoraService', functi
     $scope.cambiarNumeros = function() {
         if (primerNumero) {
             primerNumero = false;
-        } 
+        }
     };
 
     $scope.sumarValores = function sumarValores () {
@@ -62,6 +62,4 @@ controllers.controller('CalculatorCtrl', ['$scope', 'CalculadoraService', functi
                 }
             })
     };
-
-
 }])
