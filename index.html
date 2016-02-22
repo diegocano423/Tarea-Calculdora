@@ -36,7 +36,7 @@
                 <button class="btn-lg btn-primary" ng-click="valorPantalla(6)">6</button>
             </div>
             <div class="col-md-3">
-                <button class="btn-lg btn-default">x</button>
+                <button class="btn-lg btn-default" ng-click="multiplicarValores()">x</button>
             </div>
         </div>
         <div class="row">
@@ -50,7 +50,7 @@
                 <button class="btn-lg btn-primary" ng-click="valorPantalla(3)">3</button>
             </div>
             <div class="col-md-3">
-                <button class="btn-lg btn-default">/</button>
+                <button class="btn-lg btn-default" ng-click="dividirValores()">/</button>
             </div>
         </div>
         <div class="row">
@@ -61,10 +61,10 @@
                 <button class="btn-lg btn-default" ng-click="limpiarPantalla()">ac</button>
             </div>
             <div class="col-md-3">
-                <button class="btn-lg btn-default">=</button>
+                <button class="btn-lg btn-default" ng-click="calcularValores()">=</button>
             </div>
             <div class="col-md-3">
-                <button class="btn-lg btn-default">-</button>
+                <button class="btn-lg btn-default" ng-click="restarValores()">-</button>
             </div>
        </div>
     <script type="text/javascript" src="js/angular.min.js"></script>
