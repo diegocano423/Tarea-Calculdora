@@ -1,4 +1,4 @@
-var controllers = angular.module('calculator.controllers', [])
+var controllers = angular.module('calculator.controllers', ['calculator.services'])
     
 controllers.controller('CalculatorCtrl', ['$scope', 'CalculadoraService', function ($scope, CalculadoraService){
 
@@ -32,7 +32,7 @@ controllers.controller('CalculatorCtrl', ['$scope', 'CalculadoraService', functi
     $scope.sumarValores = function sumarValores () {
         $scope.cambiarNumeros();
         $scope.limpiarPantalla();
-        operacion = 'sumar';
+        operacion = 'suma';
     };
 
     $scope.multiplicarValores = function multiplicarValores () {
@@ -44,13 +44,13 @@ controllers.controller('CalculatorCtrl', ['$scope', 'CalculadoraService', functi
     $scope.restarValores = function restarValores () {
         $scope.cambiarNumeros();
         $scope.limpiarPantalla();
-        operacion = 'restar';
+        operacion = 'resta';
     };
 
     $scope.dividirValores = function dividirValores () {
         $scope.cambiarNumeros();
         $scope.limpiarPantalla();
-        operacion = 'dividir';
+        operacion = 'division';
     };
 
     $scope.calcularValores = function calcularValores () {
@@ -59,6 +59,7 @@ controllers.controller('CalculatorCtrl', ['$scope', 'CalculadoraService', functi
             .then(function(response) {
                 if (response.data) {
                     $scope.pantallaVal = response.data;
+                    primerNumero = true;
                 }
             })
     };

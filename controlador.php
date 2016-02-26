@@ -16,8 +16,5 @@ if ($operacion == $calculadora::SUMA) {
 	$resultado = $calculadora->multiplicar($primerValor, $segundoValor);
 } elseif ($operacion == $calculadora::DIVISION) {
 	$resultado = $calculadora->division($primerValor, $segundoValor);
-} elseif ($operacion == $calculadora::RESIDUO) {
-    $resultado = $calculadora->residuo($primerValor);
-}
-
+} 
 echo($resultado);

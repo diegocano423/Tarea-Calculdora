@@ -5,7 +5,6 @@ class CalculadoraService {
     const RESTA = 'resta';
     const MULTIPLICAR = 'multiplicar';
     const DIVISION = 'division';
-    const RESIDUO = 'residuo';
 
     public function sumar($primerValor, $segundoValor) {
 
@@ -24,7 +23,7 @@ class CalculadoraService {
         return null;
     }
 
-    public function mulptiplicar($primerValor, $segundoValor) {
+    public function multiplicar($primerValor, $segundoValor) {
         if (isset($primerValor, $segundoValor)) {
             return $primerValor * $segundoValor;
         }
@@ -38,11 +37,5 @@ class CalculadoraService {
         }
 
         return null;
-    }
-
-    public function residuo($primerValor) {
-        if (isset($primerValor)) {
-            return $primerValor %  
-        }
     }
 }
